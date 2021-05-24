@@ -23,7 +23,7 @@ public class Data : MonoBehaviour
     private static Vector3 GetTarget()
     {
         Vector3 mousepos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousepos = new Vector3(mousepos.x, mousepos.y, 0);
+        mousepos = new Vector3(0, mousepos.y, 0);
         return mousepos;
     }
 
